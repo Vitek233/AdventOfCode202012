@@ -33,7 +33,8 @@ void Lod::pohyb(char povel, int hodnota) {
 void Lod::otoc(char rotace, int hodnota) {
 	if (rotace == 'R')smer += hodnota;
 	else smer -= hodnota;
-	while (smer < 0)smer += 360;
+	while (smer < 0)smer += 360; 
+	while (smer > 0)smer -= 360;
 }
 void Lod::naviguj(string cesta) {
 
